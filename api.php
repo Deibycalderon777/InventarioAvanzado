@@ -1,7 +1,10 @@
-
 <?php
 // api.php - API REST para el sistema de inventario con AJAX
-header('Content-Type: application/json; charset=utf-8');
+
+// Fuerza cabeceras limpias antes de salida
+if (!headers_sent()) {
+    header('Content-Type: application/json; charset=utf-8');
+}
 require_once 'config.php';
 
 $accion = isset($_REQUEST['accion']) ? $_REQUEST['accion'] : '';
