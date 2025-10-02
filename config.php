@@ -1,5 +1,5 @@
 <?php
-// config.php - Configuración de la base de datos para Render
+// Configuración de la base de datos para Render
 
 $host       = getenv("DB_HOST") ?: "185.232.14.52";
 $usuario    = getenv("DB_USER") ?: "u760464709_23005089_usr";
@@ -8,7 +8,7 @@ $base_datos = getenv("DB_NAME") ?: "u760464709_23005089_bd";
 
 $conn = null;
 
-// Solo intentar conexión si Render ya está sirviendo la app
+// Evitar conexión en CLI (fase build)
 if (php_sapi_name() !== 'cli') {
     $conn = @new mysqli($host, $usuario, $password, $base_datos);
 
