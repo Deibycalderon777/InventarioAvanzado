@@ -169,8 +169,8 @@
                             <th>Código</th>
                             <th>Producto</th>
                             <th>Categoría</th>
-                            <th>Cantidad</th>
-                            <th>Mínimo</th>
+                            <th>Existecia</th>
+                            <th>Stock Mínimo</th>
                             <th>P. Compra</th>
                             <th>P. Venta</th>
                             <th>Valor Total</th>
