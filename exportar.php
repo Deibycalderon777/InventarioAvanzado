@@ -8,7 +8,8 @@ header('Content-Disposition: attachment; filename=inventario_' . date('Y-m-d') .
 $output = fopen('php://output', 'w');
 
 // Encabezados
-fputcsv($output, ['Código', 'Nombre', 'Categoría', 'Cantidad', 'Mínimo', 'Precio Compra', 'Precio Venta', 'Valor Total', 'Proveedor', 'Ubicación']);
+fputcsv($output, ['Codigo', 'Nombre', 'Categoria', 'Cantidad', 'Minimo', 'Precio Compra', 'Precio Venta', 'Valor Total', 'Proveedor', 'Ubicacion']);
+
 
 // Datos
 $result = $conn->query("SELECT * FROM productos ORDER BY nombre");
