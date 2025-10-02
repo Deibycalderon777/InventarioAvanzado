@@ -1,6 +1,0 @@
-services:
-  - type: web
-    name: inventario-abarrotes
-    env: php
-    plan: free
-    autoDeploy: true
