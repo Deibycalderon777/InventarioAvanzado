@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: inventario-abarrotes
+    env: php
+    plan: free
+    buildCommand: ""     # Evita que Render ejecute nada en el build
+    startCommand: ""     # Render usará PHP-FPM con Nginx por defecto
