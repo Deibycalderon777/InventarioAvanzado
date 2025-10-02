@@ -1,9 +1,9 @@
 <?php
 // config.php - Configuración de la base de datos
-$host = 'localhost';
-$usuario = 'root';
-$password = '';
-$base_datos = 'inventario_abarrotes';
+$host = '185.232.14.52';
+$usuario = 'u760464709_23005089_usr';
+$password = ':Sa[MX~2l';
+$base_datos = 'u760464709_23005089_bd';
 
 $conn = new mysqli($host, $usuario, $password, $base_datos);
 
