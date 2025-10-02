@@ -487,7 +487,7 @@
             };
             
             $.ajax({
-                url: 'api.php',
+                url: 'https://inventarioavanzado-1.onrender.com/api.php',
                 method: 'POST',
                 data: datos,
                 dataType: 'json',
